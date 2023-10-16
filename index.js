@@ -19,6 +19,10 @@ app.get('/about', (req, res) => {
   res.render('about'); // Renders "about.ejs" from the "views" directory
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects');
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
